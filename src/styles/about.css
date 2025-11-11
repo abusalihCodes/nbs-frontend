@@ -1,0 +1,708 @@
+/* -------------------------------------------------------------------------- */
+/* --- 1. ABOUT HERO SECTION (Who We Are / Vision / Mission) --- */
+/* -------------------------------------------------------------------------- */
+
+.about-intro-banner {
+    background-color: #a78165; /* Warm brown accent */
+    color: #ffffff;
+    padding: 100px 20px 80px 20px;
+    text-align: center;
+
+    /* FLOATING EFFECT */
+    position: relative;
+    z-index: 10; /* Ensures it visually sits above sections below */
+    margin-bottom: -60px; /* Pulls next section upwards slightly */
+    border-radius: 0px; /* Soft rounded edges */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); /* Prominent shadow for hovering effect */
+}
+
+.logo-on-banner-01 {
+    height: 90px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.banner-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.transition-effect {
+     animation: slideInFromTop 0.8s ease-out 0.2s both;
+}
+
+.banner-underline {
+    width: 80px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 0 auto 35px auto;
+    border-radius: 3px;
+}
+
+.banner-paragraph {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 25px auto;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* --- 2. VISION / MISSION -------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.about-hero-section {
+    background-color: #233D4F; /* Dark Slate Blue */
+    padding: 80px 0;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-top: 30px;
+}
+
+.section-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #b69176; /* Brown underline */
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.section-body {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #A6B6C1;
+    z-index: 5;
+     /* Light gray text */
+}
+
+/* -------------------------------------------------------------------------- */
+/* --- 3. CORE VALUES ------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.core-values-section {
+    background-color: #f7f7f7; /* Light gray/white background */
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10; /* Ensures it visually sits above sections below */
+    margin-top: -30px; /* Pulls next section upwards slightly */
+    border-radius: 0px; /* Soft rounded edges */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25), 0 -5px 15px rgba(0,0,0,0.9);
+}
+
+.main-section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #233D4F;
+    margin-bottom: 50px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.value-card {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.value-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #233D4F;
+    margin-bottom: 10px;
+}
+
+.value-description {
+    font-size: 0.9rem;
+    color: #4D687E;
+}
+
+/* -------------------------------------------------------------------------- */
+/* --- 4. CEO MESSAGE ------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.ceo-message-section {
+    background-color: #4D687E; /* Steel gray / darker blue */
+    padding: 80px 0;
+    color: #ffffff;
+}
+
+.ceo-message-section .container-introduction .main-section-heading {
+    color: #ffffff;
+}
+
+.ceo-content-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.ceo-image-container {
+    flex: 0 0 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ceo-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.ceo-text-block {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.ceo-quote {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #ffffff;
+    border-left: 5px solid #C2B280; /* Tan accent line */
+    padding-left: 20px;
+}
+
+.ceo-signature-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #C2B280;
+    margin-bottom: 5px;
+}
+
+.ceo-title-line {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #D2D3D4;
+}
+
+.signature-container {
+    margin-top: 20px;
+    margin-left: -40px;
+}
+
+.ceo-signature {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+    filter: none ;
+}
+
+/* -------------------------------------------------------------------------- */
+/* --- 6. EXPERTS / TEAM CARDS --------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.expert-team-section {
+    background-color: #b69176; /* Brown accent */
+    padding: 80px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.expert-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.expert-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #233D4F;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* image container */
+.expert-photo-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* keeps perfect square */
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* center + fill image */
+.expert-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center; /* centers image perfectly */
+    transform: translate(-50%, -50%);
+}
+
+.expert-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #233D4F;
+}
+
+.expert-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #b69176;
+    margin-bottom: 10px;
+}
+
+.expert-bio {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #4D687E;
+}
+
+/* -------------------------------------------------------------------------- */
+/* --- RESPONSIVE ADJUSTMENTS ----------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 1100px) {
+    .ceo-content-flex {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .ceo-image-container {
+        flex: none;
+        max-width: 300px; 
+    }
+    .ceo-text-block {
+        text-align: center;
+    }
+    .ceo-quote {
+        border-left: none;
+        border-top: 5px solid #C2B280;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 900px) {
+    .vision-mission-grid {
+        grid-template-columns: 1fr; 
+    }
+    .expert-cards-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-title {
+        font-size: 2rem;
+    }
+    .banner-paragraph {
+        font-size: 1rem;
+        text-indent: 20px;
+    }
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    .expert-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* --- 3. CORE VALUES (with Parallax Background & Floating Shadow) ----------- */
+/* -------------------------------------------------------------------------- */
+.core-values-section {
+    position: relative;
+    z-index: 12; /* Ensures it floats visually above the sections around it */
+    padding: 100px 0;
+    text-align: center;
+    margin-top: -40px; /* Creates a small overlap with the section above */
+    border-radius: 0;
+    color: #ffffff;
+
+    /* PARALLAX BACKGROUND IMAGE */
+    background-image: url('/images/riyadh-01.jpg'); /* <-- Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Enables the parallax effect */
+    background-repeat: no-repeat;
+
+    /* SHADOW EFFECT ABOVE & BELOW */
+    box-shadow: 
+        0 -15px 40px rgba(0, 0, 0, 0.4),  /* top shadow */
+        0 15px 40px rgba(0, 0, 0, 0.4);   /* bottom shadow */
+}
+
+/* DARK OVERLAY for text visibility */
+.core-values-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(35, 61, 79, 0.75); /* Deep translucent overlay for contrast */
+    z-index: 13;
+}
+
+/* CONTENT CONTAINER ABOVE OVERLAY */
+.core-values-section .container-introduction {
+    position: relative;
+    z-index: 14;
+}
+
+/* Headings & Layout */
+.main-section-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* GRID OF VALUE CARDS */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.value-card {
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent for depth */
+    padding: 35px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #C2B280; /* Gold accent */
+}
+
+.value-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.value-description {
+    font-size: 1rem;
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-section-heading {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* --- EXPERT BIO MODAL STYLES ---------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.expert-card {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.expert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.expert-photo-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.expert-click-hint {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(182, 145, 118, 0.9);
+  color: white;
+  padding: 8px;
+  font-size: 0.8rem;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.expert-card:hover .expert-click-hint {
+  transform: translateY(0);
+}
+
+.expert-click-indicator {
+  margin-top: 15px;
+  padding: 8px;
+  background: #B79586;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.expert-card:hover .expert-click-indicator {
+  background: #9d7a62;
+}
+
+/* Modal Overlay */
+.expert-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.expert-modal-content {
+  background: white;
+  border-radius: 40px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #233D4F;
+  cursor: pointer;
+  z-index: 1001;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.modal-close-btn:hover {
+  background: rgba(35, 61, 79, 0.1);
+}
+
+/* Modal Header */
+.modal-expert-header {
+  display: flex;
+  align-items: center;
+  padding: 40px 40px 20px;
+  background: linear-gradient(135deg, #233D4F 0%, #4D687E 100%);
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-expert-image {
+  flex: 0 0 120px;
+  margin-right: 30px;
+}
+
+.modal-expert-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.modal-expert-info h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.modal-expert-title {
+  font-size: 1.2rem;
+  color: #C2B280;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.modal-expert-education {
+  font-size: 1rem;
+  color: #E0E0E0;
+  font-style: italic;
+}
+
+/* Modal Body */
+.modal-expert-body {
+  padding: 30px 40px;
+}
+
+.modal-bio-section,
+.modal-specialties-section,
+.modal-certifications-section,
+.modal-awards-section {
+  margin-bottom: 30px;
+}
+
+.modal-expert-body h3 {
+  color: #233D4F;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #b69176;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.modal-expert-body p {
+  line-height: 1.7;
+  color: #4D687E;
+  margin-bottom: 15px;
+}
+
+/* Specialties Tags */
+.specialties-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.specialty-tag {
+  background: #b69176;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Lists */
+.modal-expert-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-expert-body li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #4D687E;
+  position: relative;
+  padding-left: 20px;
+}
+
+.modal-expert-body li:before {
+  content: '•';
+  color: #b69176;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+  .modal-expert-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .modal-expert-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .modal-expert-info h2 {
+    font-size: 1.6rem;
+  }
+  
+  .expert-modal-content {
+    margin: 10px;
+  }
+  
+  .modal-expert-body {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-expert-image img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .modal-expert-info h2 {
+    font-size: 1.4rem;
+  }
+  
+  .specialties-tags {
+    justify-content: center;
+  }
+}

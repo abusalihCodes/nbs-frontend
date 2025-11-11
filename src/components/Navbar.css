@@ -1,0 +1,125 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+/* --- A. General Header and Container Layout --- */
+header {
+    background-color: #D2D3D4; /* Light Cement Gray */
+    border-bottom: 1px solid #A6B6C1;
+    padding: 15px 0;
+    position: relative;
+    z-index: 5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- B. Logo Styling --- */
+.logo-brand img {
+    height: 100px;
+    width: auto;
+}
+
+/* --- C. Main Navigation Links (Centered) --- */
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1C1301;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4D687E;
+}
+
+nav ul li .active {
+    color: #4D687E;
+    border-bottom: 2px solid #4D687E;
+}
+
+/* --- D. CTA Button: Company Button-1 Style --- */
+.cta-button {
+    flex-shrink: 0;
+    padding-right: 20px;
+}
+
+.nav-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #0C1E35; /* Deep navy base */
+    overflow: hidden;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+/* Subtle wavy overlay pattern */
+.nav-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.05) 0,
+        rgba(255, 255, 255, 0.05) 2px,
+        transparent 3px,
+        transparent 10px
+    );
+    opacity: 0.5;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.nav-button:hover {
+    background-color: #13294B;
+    transform: translateY(-1px);
+   
+}
+
+/* --- E. Language Selector --- */
+.language-link .fa-solid .fa-earth-americas {
+    margin-top: 400px;
+    margin-right: 5px;
+}
+
+.language-selector .language-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1C1301;
+    transition: color 0.3s;
+}
+
+.language-selector .language-link:hover {
+    color: #4D687E;
+}
